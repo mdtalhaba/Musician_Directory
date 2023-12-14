@@ -1,8 +1,8 @@
 from django.urls import path
-from musician.views import add_musician, edit_musician, delete_musician
+from musician.views import AddMusicianView, EditMusicianView, DeleteMusicianView
 
 urlpatterns = [
-    path('add/', add_musician, name='add_musician'),
-    path('edit/<int:id>', edit_musician, name='edit_musician'),
-    path('delete/<int:id>', delete_musician, name='delete_musician'),
+    path('add/', AddMusicianView.as_view(), name='add_musician'),
+    path('edit/<int:id>', EditMusicianView.as_view(), name='edit_musician'),
+    path('delete/<int:id>', DeleteMusicianView.as_view(), name='delete_musician'),
 ]

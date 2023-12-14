@@ -7,4 +7,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('album/', include('album.urls')),
     path('musician/', include('musician.urls')),
+    path('user/', include('user_validation.urls'))
 ]

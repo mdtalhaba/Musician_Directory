@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="width: 500px; min-height: 500px; margin: auto" class="py-5 text-center">
+    <h3>Are your sure, You Want to Delete</h3>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-dark mt-2">Confirm Delete</button>
+    </form>
+</div>
+
+{% endblock content %}

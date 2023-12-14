@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'album',
     'musician',
+    'user_validation',
     "crispy_forms",
     "crispy_bootstrap5",
 ]
